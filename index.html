@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Recipe Finder</title>
+</head>
+<body>
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <div class="flex-item">
+            <div class="flex-judul">
+                <h1 class="judul">Find a Recipe</h1>
+            </div>
+            <div class="flex-deskripsi">
+                <p class="deskripsi">Website ini adalah website yang menyediakan berbagai macam resep makanan dari belahan dunia</p>
+                <hr class="my-4">
+            </div>
+            <div class="flex-seach">
+                <table width="100%">
+                    <tr>
+                        <td align="center"><p class="deskripsi">Yukk! Coba cari resep </p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <form action="#">
+                                <input type="text" id="input-search" placeholder="Ketikan Resep yang Kamu Inginkan....">
+                                <button id="btn-search" class="btn" >
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>  
+                        </td>
+                    </tr>
+                </table>
+            </div> 
+            <br><br> 
+        </div>
+    </div>
+    
+    <!-- Hasil Pencarian -->
+    <div class="no-result" id="noResult"></div>
+    <div class="your-result" id="yourResult"></div>
+    <div class="search-result" id="food-list"></div>
+    
+<script src="assets/js/script.js"></script>
+</body>
+</html>

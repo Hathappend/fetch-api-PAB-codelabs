@@ -1,0 +1,265 @@
+@font-face {
+    font-family: "Segoe Ui Light";
+    src: url('segoeuil.ttf');
+}
+*{
+    margin:0;
+    padding: 0;   
+}
+body{
+    background-color: #eff5f5;
+}
+
+/*
+*
+    design pada index.html
+*
+*/
+.jumbotron{
+    display: flex;
+    justify-content: center;
+    background-image: url(../vendor/img/bg-jumbotron-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1440px;
+    height: auto;
+    font-family: 'Segoe UI Light';
+}
+.judul{
+    padding: 20px;
+    letter-spacing:3px;
+    color: rgb(191, 248, 245);
+}
+p.deskripsi{
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(196, 235, 211);
+}
+form{
+    width: 90%;
+    max-width: 800px;
+    margin:auto;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    text-align: left;
+}
+form input{
+    width: 92%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background-color: transparent;
+}
+form .btn{
+    border: none;
+    cursor: pointer;
+}
+.flex-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.flex-item > div{
+    max-width: 720px;
+}
+.search-result{
+    margin: 30px;
+    width: 97%;
+    object-fit: cover;
+    display: grid;
+    grid-gap: 25px;
+    grid-template: auto / repeat(auto-fit, minmax(320px, 1fr));
+}
+.card{
+    background-color: #F9F9F9;
+    width: 95%;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2),
+                0 1px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.card-img-top{
+    width: 100%;
+    height: 300px;
+    border-radius: 4px;
+}
+.card > div{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.card-category{
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    padding-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    
+}
+.card-category a{
+    text-decoration: none;
+    color: #434242;
+}
+.card-body table p{
+    padding: 10px;
+    font-size: 18px;
+    color: grey;
+}
+.card-title{padding-bottom: 10px; text-align: center;}
+.card-text{width: 90%; padding-bottom: 10px;}
+.btn-detail{
+    margin-top: 10px;
+    text-decoration: none;
+    width: auto;
+    height: 15px;
+    background-color: #0275d8;
+    text-align: center;
+    padding: 15px;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+}
+
+/*
+*
+    design pada detail.html
+*
+*/
+.food-detail-header{
+    margin: 20px;
+    width: 97%;
+    object-fit: cover;
+    display: grid;
+    grid-gap: 25px;
+    grid-template: 1fr / repeat(auto-fit, minmax(320px, 1fr));
+}
+.img-detail{
+    width: 70%;
+    text-align: center;
+}
+.img-detail img{
+    width: 600px;
+}
+img{width: 100%;}
+.description-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: row wrap;
+}
+.description-detail > * {
+    padding: 8px; 
+    font-family: 'Segoe UI';
+}
+.description-detail .category{
+    width: 120px;
+    height:25px ;
+    background-color: orange;
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+}
+.food-detail-content{
+    padding: 22px;
+    font-family: 'Segoe UI Light';
+}
+.ingridients{
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+                0 1px 15px 0 rgba(0, 0, 0, 0.19);
+}
+.ingridients h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.ingridients ul{
+    padding: 20px;
+}
+.ingridients ul li{
+    padding: 5px;
+}
+.nutrients{
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+                0 1px 15px 0 rgba(0, 0, 0, 0.19);
+}
+.nutrients h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.no-result{
+    text-align: center;
+    color: red;
+    padding: 30px;
+}
+.no-result img{
+    width: 300px;
+    padding-top: 10px;
+}
+.your-result{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.heading-category{
+    padding:15px;
+    margin-left: 12px;
+}
+.category span a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Bagian Mobile Jumbotron */
+    .judul {
+        text-align: center;
+    }
+    p.deskripsi{
+        color: whitesmoke;
+        text-align: center;
+    }
+    .jumbotron{
+        background-image: url(../vendor/img/bg-jumbotron-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    hr{opacity: 0.3;}
+
+    /* Bagian Hasil Pencarian */
+    .search-result{width: 92%;}
+
+    /*Bagian DETAIL RECIPE*/
+    .food-detail-header{
+        margin: auto;
+        width: 100%;
+    }
+    .img-detail{width: 100%;}
+    .img-detail img{
+        width: 500px;
+    }
+    .description-detail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .description-detail .kkal{margin-right: 9px;}
+    .heading-category h2{
+        text-align: center;
+    }
+    form input{
+        width: 86%;
+    }
+}
+
+
+
+
+
